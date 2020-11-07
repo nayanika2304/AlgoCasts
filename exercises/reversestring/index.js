@@ -6,20 +6,28 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
+//apple
 function reverse(str) {
-    let reverse = ''
-
-    for(let i = str.length - 1;i >= 0;i--){
-        reverse += str[i]
-    }
-    return reverse
+    return str.split('').reduce((rev,char) => char + rev,'')
 }
 
+//other solutions ----
 /*
-another solution ----
 const arr = str.split('')
 arr.reverse()
 arr.join('')
  */
+
+/*for(let i = str.length - 1;i >= 0;i--){
+        reverse += str[i]
+}*/
+
+/*
+for (let character of str){
+        reverse = character + reverse
+    }
+ */
+
+
 
 module.exports = reverse;
