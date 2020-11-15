@@ -27,34 +27,34 @@ function matrix(n) {
     let endColumn = n - 1;
     let startRow = 0;
     let endRow = n - 1;
-    while (startColumn <= endColumn && startRow <= endRow) {
+    while (startRow <= endRow && startColumn <=endColumn){
         // Top row
-        for (let i = startColumn; i <= endColumn; i++) {
-            results[startRow][i] = counter;
-            counter++;
+        for (let i = startColumn; i <= endColumn; i++){
+            results[startRow][i] = counter
+            counter ++
         }
-        startRow++;
+        startRow++
 
-        // Right column
-        for (let i = startRow; i <= endRow; i++) {
-            results[i][endColumn] = counter;
-            counter++;
+        //Right Column
+        for(let i = startRow; i<=endRow;i++){
+            results[i][endColumn] = counter
+            counter ++
         }
-        endColumn--;
+        endColumn--
 
-        // Bottom row
-        for (let i = endColumn; i >= startColumn; i--) {
-            results[endRow][i] = counter;
-            counter++;
+        //Bottom row
+        for(let i = endColumn; i >= startColumn; i--){
+            results[endRow][i] = counter
+            counter++
         }
-        endRow--;
+         endRow --
 
-        // start column
-        for (let i = endRow; i >= startRow; i--) {
-            results[i][startColumn] = counter;
-            counter++;
+        //Start Column
+        for(let i = endRow; i >=startRow; i--){
+            results[i][startColumn] = counter
+            counter++
         }
-        startColumn++;
+        startColumn++
     }
 
     return results;
