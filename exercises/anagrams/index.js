@@ -25,8 +25,8 @@ function anagrams(stringA, stringB) {
 
 module.exports = anagrams
 
-/*
-function anagrams(stringA, stringB) {
+
+/*function anagrams(stringA, stringB) {
     let charMapA = createCharMap(stringA)
     let charMapB = createCharMap(stringB)
 
@@ -40,5 +40,5 @@ function anagrams(stringA, stringB) {
     })
 
     return true
-}
- */
+}*/
+
