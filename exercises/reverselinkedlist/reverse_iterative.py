@@ -1,13 +1,29 @@
-class Solution:
-    def __init__(self , data):
-        self.data = data
-        self.next = None
-    def reverse(self):
+class Node(object):
+    def __init__(self, val, next=None):
+        self.val = val
+        self.next = next
+
+    def __repr__(self):
+        res = str(self.val)
+        if self.next:
+            res += str()
+        return res
+
+
+class Solution(object):
+    def reverse(self, node):
+        curr = node
         prev = None
-        current = self.head
-        while current is not None:
-            next = current.next
-            current.next = prev
-            prev = current
-            current = next
-        self.head = prev
+
+        while curr != None:
+            tmp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = tmp
+
+        return prev
+
+
+node = Node(1, Node(2, Node(3, Node(4, Node(5)))))
+
+print(Solution().reverse(node))
