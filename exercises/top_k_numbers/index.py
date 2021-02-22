@@ -9,4 +9,4 @@ class Solution(object):
                 counts[n] = 1
         return heapq.nlargest(k, counts, key = counts.get)
 
-print(Solution().topKFrequent([1,1,1,2,2,3], 2))
+print(Solution().topKFrequent([1,1,1,2,2,3], 1))
