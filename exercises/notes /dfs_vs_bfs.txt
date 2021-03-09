@@ -1,0 +1,20 @@
+DFS :
+
+1) Uses a stack, either our own or call stack via recursion
+
+2) LIFO
+
+3) Uses: Backtracking , Complete search , exhausting all possible paths
+
+4) Goes deep
+
+BFS:
+
+1) Iterative with a queue
+
+2) FIFO
+
+3) uses: Check IF a path exists between nodes, finding hops or distance out levels away
+
+4) Goes wide
+
