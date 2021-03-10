@@ -23,6 +23,8 @@ def deepest2(node,depth=0):
         return deepest2(node.left,depth + 1)
     return max(deepest2(node.left,depth+1),deepest2(node.right,depth +1))
 
+
+
 root = Node('a')
 root.left = Node('b')
 root.left.left = Node('d')
