@@ -1,3 +1,7 @@
+# Note - Recursion won't work on large trees, due to the limit on stack limit size.
+# Iteration, on the other hand, uses heap space which is limited only by how
+# much memory is in the computer.
+
 class Node(object):
     def __init__(self,val,left=None,right =None):
         self.val = val
