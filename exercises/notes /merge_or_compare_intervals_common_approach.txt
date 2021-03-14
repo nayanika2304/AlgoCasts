@@ -1,0 +1,1 @@
+Questions like Merge intervals, car pooling, meeting rooms : sort using the start point [0]
