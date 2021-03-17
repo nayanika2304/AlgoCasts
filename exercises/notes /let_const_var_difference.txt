@@ -1,0 +1,49 @@
+-------------Difference between let, const, var -------------------------------------------------------------------
+1) A var variable can be redeclared and updated.
+
+2)A let variable be be updated but not redeclared.
+
+If I declare a let variable at the global scope, then redeclare it within a block (curly brackets) as in the example below,
+I will not get an error in the console, but it will not actually redeclare let.
+
+let points = 50;
+let winner = false;
+if(points > 40) {
+  let winner = true;
+}
+// If I call:
+winner
+// It returns the first value:
+false
+
+3) const variables cannot be updated. let variables are made to be updated.
+
+There is an interesting caveat to this, though. If I create a const variable that is an object, the attributes of that object can be updated.
+// Creating my person object:
+const person = {
+  name: 'Joseph',
+  age: 33
+}
+// Calling person in the console:
+person
+// It returns:
+{name: "Joseph", age: 33}
+// If I then redeclare the age attribute:
+person.age = 34
+// When I call it:
+person
+// It returns:
+{name: "Joseph", age: 34}
+
+4) The other issue with using var in a for loop is when you want to do something within the scope of the loop, but after the loop runs.
+i is being redeclared each time the loop runs.
+Again, the variable i is being overwritten every time the loop runs. By the time setTimeout runs, i is 10.
+A quick way to fix this is the change var to let. Because let is block scoped (within the curly brackets),
+it will behave differently, and will not reassign i every time the loop runs:
+
+for(let i = 0; i < 10; i++) {
+    console.log(i);
+    setTimeout(function() {
+      console.log('The number is ' + i);
+    }, 1000);
+}
