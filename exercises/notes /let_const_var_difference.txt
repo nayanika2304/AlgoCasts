@@ -17,6 +17,28 @@ winner
 // It returns the first value:
 false
 
+The let keyword has some differences to var, with the most obvious being that let allows a more limited access to the variable than var.
+ This is called "block scoping" as opposed to regular or function scoping.
+
+var adult = true;
+
+if (adult) {
+    var myName = "Kyle";
+    let age = 39;
+    console.log("Shhh, this is a secret!");
+}
+
+console.log(myName);
+// Kyle
+
+console.log(age);
+// Error!
+The attempt to access age outside of the if statement results in an error, because age was block-scoped to the if, whereas myName was not.
+
+Block-scoping is very useful for limiting how widespread variable declarations are in our programs, which helps prevent accidental overlap of their names.
+
+
+
 3) const variables cannot be updated. let variables are made to be updated.
 
 There is an interesting caveat to this, though. If I create a const variable that is an object, the attributes of that object can be updated.
