@@ -1,3 +1,4 @@
+https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/
 -----------Difference between regular function and arrow function ----------------------------
 1) this value:
 

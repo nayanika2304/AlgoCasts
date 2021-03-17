@@ -1,3 +1,4 @@
+https://josephcardillo.medium.com/the-difference-between-var-let-and-const-in-javascript-part-2-60fa568d0a0
 -------------Difference between let, const, var -------------------------------------------------------------------
 1) A var variable can be redeclared and updated.
 
