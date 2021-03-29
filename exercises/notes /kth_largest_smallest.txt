@@ -1,0 +1,2 @@
+Kth largest: min heap helps in ejecting the smallest items
+kth smallest: max heap helps in ejecting the largest items
