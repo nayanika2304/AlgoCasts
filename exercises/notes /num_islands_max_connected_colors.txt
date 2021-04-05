@@ -1,0 +1,2 @@
+main idea: DFS to visit the neighbors and check if the surroundings are 1 or 0
+https://www.youtube.com/watch?v=bks-nx3qBOE&ab_channel=thecodingworld
