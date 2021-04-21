@@ -1,0 +1,1 @@
+find_subtree: use preorder traversal to generate a string and then compare the string 

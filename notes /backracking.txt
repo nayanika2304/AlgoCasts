@@ -1,0 +1,12 @@
+1) Our choice:
+    what choices are we making at each call of the function
+    recursion represents decisions
+2) Our constraints:
+    When do we stop following a certain path
+    when do w not go one way
+
+3) Our goal
+    What is our target
+    what are we trying to find
+
+goal -> choice -> constraint -> undo
