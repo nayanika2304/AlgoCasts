@@ -1,0 +1,4 @@
+always binary search!!!!!
+
+mod(%) helps in wrap around
+divide(/) helps in 
