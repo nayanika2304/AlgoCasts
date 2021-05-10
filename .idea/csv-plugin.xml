@@ -38,6 +38,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/exercises/setTimeout/non-recursive.js">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

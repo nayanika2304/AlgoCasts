@@ -1,0 +1,15 @@
+FAST method
+
+TOP DOWN Approach
+F - Find the recursive solution
+A - Analyze the solution
+S - Save the results for future (use n - dimensional array for caching)
+
+BOTTOM UP Approach
+T - Tweak the solution to make it more powerful by eliminating recursion overhead
+
+-- How can I break down into sub problems and how can I come back up with a global solution
+
+Given an array and we need to find a minimum solution
+Longest Increasing Subsequence
+change making problem

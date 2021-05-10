@@ -1,0 +1,2 @@
+left shift -> << * 2
+right shift -> >> /2
