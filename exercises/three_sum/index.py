@@ -47,6 +47,6 @@ class Solution(object):
                 high -= 1
 
 
-print(Solution().threeSumBruteForce([-1, 0, 1, 2, -4, -3]))
-print(Solution().threeSumHashmap([-1, 0, 1, 2, -4, -3]))
+#print(Solution().threeSumBruteForce([-1, 0, 1, 2, -4, -3]))
+#print(Solution().threeSumHashmap([-1, 0, 1, 2, -4, -3]))
 print(Solution().threeSumIndices([-1, 0, 1, 2, -4, -3]))

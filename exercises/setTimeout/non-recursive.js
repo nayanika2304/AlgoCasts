@@ -5,9 +5,12 @@ for (let i = 10; i > 0; i--){
 }
 
 function doSetTimeout(num,i){
-    setTimeout(function (delay){console.log(`${num}-${delay/1000} seconds`)},i *1000,i*1000)
+
+    setTimeout(function (){
+        console.log(`${num}-${i} seconds`)
+    },i *1000)
 }
 
-arr.forEach((item,i)=>{
-    doSetTimeout(item,i+1)
+arr.forEach((num,i)=>{
+    doSetTimeout(num,i+1)
 })
